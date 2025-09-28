@@ -1,0 +1,56 @@
+
+@import url("../public/fonts/style.css");
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #e2dcc3,  0%, #faf8f5 100%);
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+}
+.iphone-frame {
+  width: 400px;
+  height: 720px;
+  background: #2d2d2d;
+  border-radius: 50px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  background: #2d2d2d;
+  border-radius: 35px;
+  overflow: hidden;
+}
+.iphone-notch {
+  width: 150px;
+  height: 25px;
+  background: #2d2d2d;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
