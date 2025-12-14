@@ -1,8 +1,10 @@
-import './style.css'
+import '../style.css'
 import { setupAOS } from './aos.js'
 import {setupSwiper} from "./swipper.js";
-import feather from "feather-icons";
+import { initRegisterForm } from "./formValidator.js";
 
+
+import feather from "feather-icons";
 
 
 
@@ -11,7 +13,12 @@ setupSwiper();
 
 feather.replace();
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    initRegisterForm();
+
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll("nav a");
 
@@ -27,13 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         navLinks.forEach((link) => {
-            link.classList.remove("text-yellow-500", "font-medium");
-            link.classList.add("text-gray-600");
+            link.classList.remove("text-secondary", "font-medium");
+            link.classList.add("text-white");
 
             if (link.getAttribute("href") === "#" + current) {
-                link.classList.add("text-yellow-500", "font-medium");
-                link.classList.remove("text-gray-600");
+                link.classList.add("text-secondary", "font-medium");
+                link.classList.remove("text-white");
             }
         });
     });
 });
+
+
+

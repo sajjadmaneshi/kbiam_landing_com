@@ -5,401 +5,464 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>رزرواسیون آرایشگاه | نوبت آنلاین</title>
-  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-
-
 </head>
-<body class="bg-gray-50">
-<!-- Navigation -->
-<nav class="sticky-nav bg-white/80 shadow-sm">
-  <div class="container mx-auto px-4 py-3">
-    <div class="flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <i data-feather="scissors" class="text-yellow-500"></i>
-        <span class="text-xl font-bold text-gray-800">آرایشگاه من</span>
-      </div>
-      <div class="hidden md:flex space-x-6">
-        <a href="#home" class="text-yellow-500 font-medium">صفحه اصلی</a>
-        <a href="#services" class="text-gray-600 hover:text-yellow-500">خدمات</a>
-        <a href="#barbers" class="text-gray-600 hover:text-yellow-500">آرایشگرها</a>
-        <a href="#comments" class="text-gray-600 hover:text-yellow-500">نظرات</a>
-      </div>
-      <div class="flex items-center space-x-4">
-        <button class="md:hidden">
-          <i data-feather="menu"></i>
-        </button>
-        <button class="hidden md:block bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
-          ورود / ثبت نام
-        </button>
-      </div>
-    </div>
-  </div>
-</nav>
+<body class="gradient-bg text-white">
+<header class="sticky top-4 z-50">
+    <nav class="mx-auto max-w-screen-xl px-4">
+        <div class="flex items-center justify-between rounded-xl
+                bg-white/10 backdrop-blur-md border border-white/20 px-4 py-3">
 
-<!-- Hero Section -->
-<section class="gradient-bg" id="home">
-  <div class="container mx-auto px-4 py-12 ">
-    <div class="flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-          رزرو آنلاین نوبت آرایشگاه <span class="text-yellow-500 display: block mt-5">در چند ثانیه</span>
-        </h1>
-        <p class="text-gray-600 mb-8 text-lg">
-          با اپلیکیشن ما، به سادگی و در هر زمان و مکان نوبت آرایشگاه خود را رزرو کنید و از خدمات حرفه‌ای بهره‌مند شوید.
-        </p>
-        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-          <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-purple-700 transition flex items-center justify-center">
-            <i data-feather="download" class="ml-2"></i>
-            دانلود اپلیکیشن
-          </button>
-<!--          <button class="border border-purple-600 text-purple-600 px-6 py-3 rounded-full hover:bg-purple-50 transition flex items-center justify-center">-->
-<!--            <i data-feather="calendar" class="ml-2"></i>-->
-<!--            رزرو نوبت-->
-<!--          </button>-->
+            <div class="flex items-center gap-2">
+                <i data-feather="scissors" class="text-secondary"></i>
+                <span class="text-lg md:text-xl font-bold">کی‌بیام</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#hero" class=" hover:text-secondary">خانه</a>
+                <a href="#whyUS" class=" hover:text-secondary">چرا ما</a>
+                <a href="#services" class=" hover:text-secondary">خدمات</a>
+                <a href="#how-it-works" class=" hover:text-secondary">درباره ما</a>
+            </div>
+
+
+            <div class="flex items-center gap-3">
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            <div>
+
+            <button
+                    class="hidden md:inline-flex items-center rounded-xl
+                          px-4 py-2 text-sm  text-secondary  transition">
+                ثبت نام آرایشگران
+            </button>
+        <button
+                class="hidden md:inline-flex items-center rounded-xl
+                     border px-4 py-2 text-sm hover:bg-white
+                      hover:text-black transition">
+            ورود / ثبت ‌نام
+        </button>
+    </div>
+
+            </div>
         </div>
-      </div>
-      <div class="container mx-auto  px-4">
-        <div class="flex flex-col items-center">
-          <div class="iphone-frame mb-12">
-            <div class="iphone-notch"></div>
-            <div class="iphone-screen">
-              <div class="swiper h-full">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide bg-blue-500">صفحه اصلی</div>
-                  <div class="swiper-slide bg-green-500">رزرو نوبت</div>
-                  <div class="swiper-slide bg-purple-500">خدمات</div>
-                  <div class="swiper-slide bg-red-500">پروفایل</div>
+    </nav>
+</header>
+
+<main>
+    <section id="hero" >
+        <div class="relative z-10 mx-auto max-w-screen-xl px-4 py-25">
+            <div class="grid gap-12 lg:grid-cols-2 items-center">
+                <div>
+                    <h1 class="text-3xl md:text-5xl  font-black text-white leading-tight">
+                        رزرو آنلاین نوبت آرایشگاه <span class="block text-secondary mt-3">در چند ثانیه</span>
+                    </h1>
+                    <p class="mt-6 text-base md:text-lg text-gray-200 leading-relaxed">
+                        با کی بیام، به سادگی و در هر زمان و مکان <br>نوبت آرایشگاه خود را رزرو کنید و از خدمات حرفه‌ای بهره‌مند شوید.
+                    </p>
+
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <button class="bg-black text-white px-6 py-3 rounded-full  transition flex items-center justify-center">
+                            <i data-feather="download" class="ml-2"></i>
+                            دانلود اپلیکیشن
+                        </button>
+                        <button class="bg-secondary text-black px-6 py-3 rounded-full hover:bg-purple-50 transition flex items-center justify-center">
+                            <i data-feather="calendar" class="ml-2"></i>
+                            رزرو نوبت
+                        </button>
+                    </div>
                 </div>
-                <div class="swiper-pagination"></div>
-              </div>
+
+                <div class="flex justify-center relative phone "   data-aos="fade-left"
+                  >
+                    <img
+                            alt="demo-screenshot"
+                            src="public/demo-mockup.svg"
+                         class="w-[75%] md:w-[50%]"
+                         loading="lazy" />
+                    <div class="landing-page-tint2 w-[75%] md:w-[50%]"></div>
+                </div>
             </div>
-          </div>
+
+
+
 
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="landing-page-tint"></div>
+        <img alt="hero-background" class="absolute inset-0 w-full h-full object-cover"
+             src="public/barber-shop-salon.jpg" />
+    </section>
 
-<!-- Services Section -->
-<section class="py-16 bg-black" id="services">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">خدمات تخصصی ما</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">با بهترین آرایشگرها و مدرن‌ترین تجهیزات در خدمت شما هستیم</p>
-    </div>
+    <section  id="whyUS" class="py-10">
+        <div class="mx-auto max-w-4xl px-4 text-center">
+            <h2 class="text-4xl  font-bold text-white mb-4" >چرا باید ما را انتخاب کنید؟</h2>
+            <div class="why-us rounded-xl  mx-auto   shadow-md p-6 md:p-8 text-justify"
+                 data-aos="fade-up" data-aos-delay="100">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="100">
-        <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-          <i data-feather="scissors" class="text-yellow-500 w-6 h-6"></i>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">کوتاهی مو</h3>
-        <p class="text-gray-600 mb-4">کوتاهی حرفه‌ای مو با جدیدترین مدل‌های روز دنیا توسط آرایشگران مجرب</p>
-        <a href="#" class="text-yellow-500 font-medium flex items-center">
-          دانلود اپلیکیشن
-          <i data-feather="arrow-left" class="mr-2 w-4 h-4"></i>
-        </a>
-      </div>
+                <h3 class="text-2xl/12 font-medium text-gray-300 mb-3">
+                    <strong class="text-secondary"> کی‌بیام</strong>
+                    ساده‌ترین و مطمئن‌ترین راه برای پیدا کردن و رزرو آرایشگاهه
+                    <br>
+                    دسترسی راحت به آرایشگرها
+                    <br>
+                    مقایسه واقعی بر اساس تجربه کاربران
+                    <br>
+                    و رزروی سریع و دقیق، بدون معطلی و نگرانی .<br>
+                </h3>
 
-      <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="200">
-        <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-          <i data-feather="smile" class="text-yellow-500 w-6 h-6"></i>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">پاکسازی و جوانسازی پوست</h3>
-        <p class="text-gray-600 mb-4">رنگ‌های طبیعی و گیاهی با کیفیت عالی و تضمین سلامت مو</p>
-        <a href="#" class="text-yellow-500 font-medium flex items-center">
-          دانلود اپلیکیشن
-          <i data-feather="arrow-left" class="mr-2 w-4 h-4"></i>
-        </a>
-      </div>
-
-      <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="300">
-        <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-          <i data-feather="smile" class="text-yellow-600 w-6 h-6"></i>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">آرایش صورت</h3>
-        <p class="text-gray-600 mb-4">آرایش حرفه‌ای برای مناسبت‌های خاص با بهترین محصولات آرایشی</p>
-        <a href="#" class="text-yellow-500 font-medium flex items-center">
-          دانلود اپلیکیشن
-          <i data-feather="arrow-left" class="mr-2 w-4 h-4"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- How It Works -->
-<section class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">چگونه کار می‌کند؟</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">در 3 مرحله ساده نوبت خود را رزرو کنید</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <span class="text-yellow-500 font-bold text-xl">1</span>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">اپلیکیشن را دانلود کنید</h3>
-        <p class="text-gray-600">اپلیکیشن ما را از کافه بازار یا گوگل پلی دانلود کنید</p>
-      </div>
-
-      <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-        <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <span class="text-yellow-500 font-bold text-xl">2</span>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">آرایشگر و خدمات را انتخاب کنید</h3>
-        <p class="text-gray-600">آرایشگر مورد نظر خود را بر اساس تخصص و نظرات کاربران انتخاب کنید</p>
-      </div>
-
-      <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-        <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <span class="text-yellow-500 font-bold text-xl">3</span>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">زمان مورد نظر را رزرو کنید</h3>
-        <p class="text-gray-600">زمان مناسب خود را انتخاب و نوبت را نهایی کنید</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Stylists Section -->
-<section class="py-16 bg-black" id="barbers">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">آرایشگرهای ما</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">با تیم حرفه‌ای و مجرب ما آشنا شوید</p>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-        <img src="http://static.photos/people/640x360/1" alt="Stylist" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-1">سارا محمدی</h3>
-          <p class="text-black-500 mb-3">متخصص رنگ و مش</p>
-          <div class="flex items-center text-yellow-400 mb-4">
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <span class="text-gray-600 text-sm mr-2">(۴۸)</span>
-          </div>
-          <button class="w-full bg-black text-white py-2 rounded-full hover:bg-gray-700 transition">
-            رزرو نوبت
-          </button>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-        <img src="http://static.photos/people/640x360/2" alt="Stylist" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-1">علی رضایی</h3>
-          <p class="text-black-500 mb-3">متخصص کوتاهی مردانه</p>
-          <div class="flex items-center text-yellow-400 mb-4">
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
-            <span class="text-gray-600 text-sm mr-2">(۳۶)</span>
-          </div>
-          <button class="w-full bg-black text-white py-2 rounded-full hover:bg-gray-700 transition">
-            رزرو نوبت
-          </button>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-        <img src="http://static.photos/people/640x360/3" alt="Stylist" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-1">نازنین کریمی</h3>
-          <p class="text-black-500 mb-3">متخصص آرایش عروس</p>
-          <div class="flex items-center text-yellow-400 mb-4">
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <span class="text-gray-600 text-sm mr-2">(۵۲)</span>
-          </div>
-          <button class="w-full bg-black text-white py-2 rounded-full hover:bg-gray-700 transition">
-            رزرو نوبت
-          </button>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-        <img src="http://static.photos/people/640x360/4" alt="Stylist" class="w-full h-64 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-1">محمد حسینی</h3>
-          <p class="text-black-500 mb-3">متخصص کاشت ناخن</p>
-          <div class="flex items-center text-yellow-400 mb-4">
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current"></i>
-            <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
-            <span class="text-gray-600 text-sm mr-2">(۲۹)</span>
-          </div>
-          <button class="w-full bg-black text-white py-2 rounded-full hover:bg-gray-700 transition">
-            رزرو نوبت
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="py-16 bg-purple-50" id="comments">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">نظرات مشتریان</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">آنچه مشتریان ما درباره خدمات ما می‌گویند</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
-        <div class="flex items-center mb-4">
-          <img src="http://static.photos/people/200x200/1" alt="Customer" class="w-12 h-12 rounded-full object-cover">
-          <div class="mr-3">
-            <h4 class="font-bold text-gray-800">مریم احمدی</h4>
-            <div class="flex text-yellow-400">
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
             </div>
-          </div>
         </div>
-        <p class="text-gray-600">
-          بهترین تجربه آرایشگاه در زندگی‌ام بود! سارا عالی کار کرد و رنگ مویی که زد دقیقاً همون چیزی بود که می‌خواستم. حتماً دوباره می‌آیم.
-        </p>
-      </div>
 
-      <div class="bg-white p-6 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
-        <div class="flex items-center mb-4">
-          <img src="http://static.photos/people/200x200/2" alt="Customer" class="w-12 h-12 rounded-full object-cover">
-          <div class="mr-3">
-            <h4 class="font-bold text-gray-800">رضا موسوی</h4>
-            <div class="flex text-yellow-400">
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current"></i>
-              <i data-feather="star" class="w-4 h-4 fill-current text-gray-300"></i>
+
+
+
+
+    </section>
+
+    <section id="services" class="space-y-5 py-24">
+        <div class="mx-auto max-w-screen-xl px-4">
+            <div class="grid gap-12 md:grid-cols-2 items-center">
+                <div data-aos="fade-left">
+                    <p class="text-xl font-bold text-secondary mb-1">پیدا کردن بهترین آرایشگاه‌های اطراف شما</p>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        دسترسی به نزدیک‌ترین‌ها
+                    </h1>
+                    <p class="text-white mb-8 text-lg/7.5">
+                        با <strong class="text-secondary">کی بیام</strong>، آرایشگاه‌های نزدیک محل زندگی یا کارتان را به‌راحتی پیدا می‌کنید.<br>
+
+                        دیگه نیازی به پرس‌وجو یا جستجوی طولانی نیست.
+                        <br>
+                        موقعیت مکانی شما مبنا قرار می‌گیرد تا سریع‌ترین و راحت‌ترین انتخاب را داشته باشید.
+                        <br>
+                        همه‌چیز در چند کلیک ساده در دسترس شماست.
+                    </p>
+
+                </div>
+                <div  data-aos="fade-right">
+                    <img  src="public/aks1.png" alt="">
+
+                </div>
+
             </div>
-          </div>
+            <div class="flex justify-center">
+                <img src="public/download.png" class="flip"  alt="">
+            </div>
         </div>
-        <p class="text-gray-600">
-          رزرو نوبت خیلی راحت بود و آرایشگر خیلی حرفه‌ای کار کرد. فقط محیط کمی شلوغ بود که شاید بهتر بود مدیریت بشه.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- CTA Section -->
-<section class="py-16 gradient-bg">
-  <div class="container mx-auto px-4 text-center">
-    <div class="max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">همین حالا نوبت خود را رزرو کنید!</h2>
-      <p class="text-gray-600 mb-8 text-lg">
-        با دانلود اپلیکیشن ما، از تخفیف ویژه اولین رزرو خود بهره‌مند شوید و همیشه از جدیدترین خدمات و پیشنهادات ما مطلع باشید.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-        <button class="bg-yellow-400 text-black-300 px-6 py-3 rounded-full hover:bg-purple-700 transition flex items-center justify-center">
-          <i data-feather="download" class="ml-2"></i>
-          دانلود برای اندروید
-        </button>
-        <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900 transition flex items-center justify-center">
-          <i data-feather="download" class="ml-2"></i>
-          دانلود برای آیفون
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
+
+        <div class="mx-auto max-w-screen-xl px-4">
+            <div class="grid gap-12 md:grid-cols-2 items-center">
+                <div  data-aos="fade-left">
+                    <img  src="public/aks1.png" alt="">
+                </div>
+                <div  data-aos="fade-right">
+                    <p class="text-xl font-bold text-secondary mb-1">رزرو هوشمند و بدون انتظار در ساعات خلوت</p>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        رزرو سریع، بدون معطلی
+                    </h1>
+                    <p class="text-white mb-8 text-lg/7.5">
+                        <strong class="text-secondary">کی بیام</strong> به شما کمک می‌کند تایم‌های خلوت ‌تر؛ آرایشگاه‌ها را تشخیص دهید.
+                        <br>
+                        با رزرو آنلاین، بدون معطلی سرویس می‌گیرید.
+                        <br>
+                        زمان شما هدر نمی‌رود و دقیقاً در ساعت تعیین‌شده نوبت‌تان آماده است.
+                        <br>
+                        تجربه‌ای سریع، منظم و بدون استرس.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <img src="public/download.png"  alt="">
+            </div>
+        </div>
+        <img src="public/background-sample2.png" class="bg-2" alt="">
+        <div class="mx-auto max-w-screen-xl px-4">
+            <div class="grid gap-12 md:grid-cols-2 items-center">
+                <div  data-aos="fade-left">
+                    <p class="text-xl font-bold text-secondary mb-1">انتخاب آگاهانه با مقایسه و نظرات کاربران</p>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        مقایسه و بهترین انتخاب
+                    </h1>
+                    <p class="text-white mb-8 text-lg/7.5">
+                        قبل از رزرو می‌توانید آرایشگاه‌ها را با هم مقایسه کنید.
+                        <br>
+                        مشاهده امتیازها، نظرات مشتریان و نمونه‌کارها تصمیم‌گیری را آسان‌تر می‌کند.
+                        <br>
+                        به‌جای انتخاب شانسی، با اطمینان انتخاب می‌کنید.
+                        <br>
+                        بهترین کیفیت متناسب با سلیقه شما.
+                    </p>
+
+                </div>
+                <div  data-aos="fade-right">
+                    <img src="public/aks1.png" alt="">
+                </div>
+
+            </div>
+            <div class="flex justify-center">
+                <img src="public/download.png" class="flip"  alt="">
+            </div>
+        </div>
+
+        <div class="mx-auto max-w-screen-xl px-4">
+            <div class="grid gap-12 md:grid-cols-2 items-center">
+                <div data-aos="fade-left">
+                    <img src="public/aks1.png" alt="">
+                </div>
+                <div  data-aos="fade-right">
+                    <p class="text-xl font-bold text-secondary mb-1">   رزرو آنلاین در هر زمان و از هر دستگاه</p>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+
+                        دسترسی در وب و موبایل
+                    </h1>
+                    <p class="text-white mb-8 text-lg/7.5">
+                        قبل از رزرو می‌توانید آرایشگاه‌ها را با هم مقایسه کنید.
+                        <br>
+                        مشاهده امتیازها، نظرات مشتریان و نمونه‌کارها تصمیم‌گیری را آسان‌تر می‌کند.
+                        <br>
+                        به‌جای انتخاب شانسی، با اطمینان انتخاب می‌کنید.
+                        <br>
+                        بهترین کیفیت متناسب با سلیقه شما.
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="how-it-works" class="py-16 ">
+        <div class="mx-auto max-w-screen-xl px-4 rounded-xl   how-work backdrop-blur py-5">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4"> آسون‌تر از همیشه...</h2>
+                <p class="text-secondary max-w-2xl mx-auto">در 3 مرحله ساده رزرو کنید</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-green-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">اپلیکیشن را دانلود کنید</h3>
+                    <p class="text-gray-400">اپلیکیشن ما را از کافه بازار یا گوگل پلی دانلود کنید</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-green-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">آرایشگر و خدمات را انتخاب کنید</h3>
+                    <p class="text-gray-400">آرایشگر مورد نظر خود را بر اساس تخصص و نظرات کاربران انتخاب کنید</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-green-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">زمان مورد نظر را رزرو کنید</h3>
+                    <p class="text-gray-400">زمان مناسب خود را انتخاب و نوبت را نهایی کنید</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">همین حالا نوبت خود را رزرو کنید!</h2>
+                <p class="text-gray-300 mb-8 text-lg">
+                    با دانلود اپلیکیشن ما، از تخفیف ویژه اولین رزرو خود بهره‌مند شوید و همیشه از جدیدترین خدمات و پیشنهادات ما مطلع باشید.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-black text-white px-6 py-3 rounded-full  transition flex items-center justify-center">
+                        <i data-feather="download" class="ml-2"></i>
+                        دانلود اپلیکیشن
+                    </button>
+                    <button class="bg-secondary text-black px-6 py-3 rounded-full hover:bg-purple-50 transition flex items-center justify-center">
+                        <i data-feather="calendar" class="ml-2"></i>
+                        رزرو نوبت
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="form" class="section_form">
+       <div class="mx-auto max-w-screen-xl px-4">
+            <div class="container mx-auto max-w-2xl flex flex-col text-center">
+                <h1 class="text-xl md:text-5xl font-black leading-tight mb-10">میخوای یکی از سرویس دهنده های ما باشی؟</h1>
+                <div class="text-center rounded-xl relative
+                bg-white/10 backdrop-blur-md border border-white/20 px-4 py-3">
+                    <form id="registerForm" class="space-y-6">
+
+                        <!-- Name -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block mb-2 text-sm text-white" for="firstName">نام
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <input
+                                        id="firstName"
+                                        type="text"
+                                        placeholder="نام خود را وارد کنید"
+                                        class="form-input   focus:border-secondary focus:ring-1 focus:ring-secondary"
+                                />
+                                <p class="form-error"></p>
+                            </div>
+                            <div>
+                                <label class="block mb-2 text-sm text-white" for="lastName">
+                                    نام خانوادگی
+                                    <span class="text-red-500">*</span>
+                                </label>
+
+                                <input
+                                        id="lastName"
+                                        type="text"
+                                        placeholder="نام خانوادگی خود را وارد کنید"
+                                        class="form-input   focus:border-secondary focus:ring-1 focus:ring-secondary"/>
+                                <p class="form-error"></p>
+                            </div>
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block mb-2 text-sm text-white" for="phone">
+                                    شماره همراه
+                                    <span class="text-red-500">*</span>
+                                </label>
+
+                                <input
+                                        id="phone"
+                                        type="tel"
+                                        placeholder="09xxxxxxxxx"
+                                        class="form-input   focus:border-secondary focus:ring-1 focus:ring-secondary"/>
+                                <p class="form-error"></p>
+                            </div>
+                            <div>
+                                <label class="block mb-3 text-sm text-white required">جنسیت</label>
+                                <div id="genderWrapper" class="flex gap-6 justify-center">
+
+                                    <label class="flex items-center gap-2 cursor-pointer">
+                                        <input type="radio" name="gender" value="1" class="accent-secondary" checked>
+                                        <span>آقا</span>
+                                    </label>
+
+                                    <label class="flex items-center gap-2 cursor-pointer">
+                                        <input type="radio" name="gender" value="0" class="accent-secondary">
+                                        <span>خانم</span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button
+                                type="submit"
+                                class="rounded bg-secondary text-black
+                                min-w-30
+           px-4 py-2 font-bold text-md
+           hover:scale-105 transition disabled:opacity-50">
+                           ارسال
+                        </button>
+
+                    </form>
+            <img alt="form-background" src="public/background-sample1.png" class="bg-form">
+                </div>
+            </div>
+       </div>
+
+    </section>
+
+
+</main>
+
+
+
 
 <!-- Footer -->
-<footer class="bg-black text-white py-12">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div>
-        <div class="flex items-center space-x-2 mb-4">
 
-          <span class="text-xl font-bold">درباره ما</span>
+
+
+<footer class="bg-black/60">
+    <div class="mx-auto max-w-screen-xl px-4 py-12">
+        <div class="flex justify-between">
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+
+                    <span class="text-xl font-bold">درباره ما</span>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    ارائه بهترین خدمات آرایشگاهی با کیفیت عالی و قیمت مناسب
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500">
+                        <i data-feather="instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">تماس با ما</h3>
+                <ul class="space-y-2">
+
+                    <li class="flex items-center text-gray-400">
+                        <i data-feather="phone" class="ml-2 w-4 h-4"></i>
+                        سجاد منشی
+                        <a href="tel:+989176248563" class="hover:underline mx-2">
+                            (09176248563)
+                        </a>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <i data-feather="phone" class="ml-2 w-4 h-4"></i>
+                        پیام امیدوار
+                        <a href="tel:+989364996874" class="hover:underline mx-2">
+                            (09364996874)
+                        </a>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <i data-feather="mail" class="ml-2 w-4 h-4"></i>
+                        info@mysalon.com
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p class="text-gray-400 mb-4">
-          ارائه بهترین خدمات آرایشگاهی با کیفیت عالی و قیمت مناسب
-        </p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-yellow-500">
-            <i data-feather="instagram"></i>
-          </a>
+        <!-- Footer Content -->
 
+        <div class="mt-12 border-t border-white/10 pt-6 text-center text-sm text-gray-400">
+            <p>
+                © <span id="year"></span>
+                تمام حقوق برای
+                <strong class="text-white">کی‌بیام</strong>
+                محفوظ است.
+            </p>
         </div>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-bold mb-4">لینک‌های مفید</h3>
-        <ul class="space-y-2">
-          <li><a href="#home" class="text-gray-400 hover:text-yellow-500">صفحه اصلی</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">درباره ما</a></li>
-          <li><a href="#services" class="text-gray-400 hover:text-yellow-500">خدمات</a></li>
-          <li><a href="#barbers" class="text-gray-400 hover:text-yellow-500">آرایشگرها</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">تماس با ما</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-bold mb-4">خدمات</h3>
-        <ul class="space-y-2">
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">کوتاهی مو</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">رنگ مو</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">آرایش صورت</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">کاشت ناخن</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-yellow-500">میکاپ عروس</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-bold mb-4">تماس با ما</h3>
-        <ul class="space-y-2">
-
-          <li class="flex items-center text-gray-400">
-            <i data-feather="phone" class="ml-2 w-4 h-4"></i>
-            سجاد منشی
-            <a href="tel:+989176248563" class="hover:underline mx-2">
-              (09176248563)
-            </a>
-          </li>
-          <li class="flex items-center text-gray-400">
-            <i data-feather="phone" class="ml-2 w-4 h-4"></i>
-            پیام امیدوار
-            <a href="tel:+989364996874" class="hover:underline mx-2">
-              (09364996874)
-            </a>
-          </li>
-          <li class="flex items-center text-gray-400">
-            <i data-feather="mail" class="ml-2 w-4 h-4"></i>
-            info@mysalon.com
-          </li>
-        </ul>
-      </div>
     </div>
-
-    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-      <p>© ۲۰۲۳ آرایشگاه من. تمام حقوق محفوظ است.</p>
-    </div>
-  </div>
 </footer>
-<script type="module" src="/src/main.js"></script>
 
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+</script>
+
+<script type="module"
+        src="/src/main.js"></script>
 
 </body>
+
+
+
+
+
 </html>
