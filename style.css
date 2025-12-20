@@ -234,13 +234,10 @@ background: linear-gradient(to top, rgb(0, 0, 0), var(--primary));
     placeholder:text-gray-400 transition;
 }
 
-.fade-up {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+.submit-button{
+ cursor: pointer;
 }
 
-.fade-up.show {
-    opacity: 1;
-    transform: translateY(0);
+.cursor-pointer{
+    cursor: pointer;
 }

@@ -1,5 +1,8 @@
 // formValidator.js
 
+import axios from "axios";
+import { openDialog } from "./dialog";
+
 const MOBILE_REGEX = /^09\d{9}$/;
 
 /**
@@ -24,9 +27,9 @@ function clearError(input) {
     if (error) error.textContent = "";
 }
 
-/**
- * پاک شدن خطا هنگام تایپ
- */
+
+
+
 function bindLiveValidation(inputs) {
     inputs.forEach(input => {
         input.addEventListener("input", () => {
@@ -61,17 +64,20 @@ function bindLiveValidation(inputs) {
 /**
  * ولیدیشن فرم ثبت‌نام
  */
-function initRegisterForm(formId = "registerForm") {
+ function  initRegisterForm(formId = "registerForm") {
     const form = document.getElementById(formId);
+    const submitBtn = form.querySelector('button[type="submit"]');
     if (!form) return;
 
     const firstName = form.querySelector("#firstName");
     const lastName  = form.querySelector("#lastName");
     const phone     = form.querySelector("#phone");
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+
 
     bindLiveValidation([firstName, lastName, phone]);
 
-    form.addEventListener("submit", event => {
+    form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         let isValid = true;
@@ -104,16 +110,46 @@ function initRegisterForm(formId = "registerForm") {
         if (!isValid) return;
 
         // داده نهایی
-        const formData = {
-            name: firstName.value.trim(),
-            family: lastName.value.trim(),
-            phone: phoneValue,
+        const payload = {
+            firstname: firstName.value.trim(),
+            lastname: lastName.value.trim(),
+            mobileNumber: phoneValue,
+            gender:+gender,
         };
 
-        console.log("✅ Form Data:", formData);
+        submitBtn.disabled = true;
+        submitBtn.textContent = "در حال ارسال...";
+        try {
+            // Call API
+            const response = await axios.post(
+                "https://kbiam.liara.run/api/barber",
+                payload,
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
 
-        alert("✅ درخواست شما با موفقیت ثبت شد!");
-        form.reset();
+            openDialog({
+                title: "✅ تبریک",
+                message: "درخواست شما با موفقیت ثبت شد<br>",
+            });
+            form.reset();
+
+        } catch (error) {
+            openDialog({
+                title: "❌ خطا",
+                message:
+                    error.response?.data?.message==='user with this phone number registered before'?
+                'این شماره قبلا ثبت شده است':
+                    "خطا در ثبت اطلاعات، دوباره تلاش کنید",
+            });
+        }
+        finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "ارسال";
+        }
     });
 }
 

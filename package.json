@@ -16,6 +16,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "aos": "^2.3.4",
+    "axios": "^1.13.2",
     "feather-icons": "^4.29.2",
     "swiper": "^12.0.2"
   }
