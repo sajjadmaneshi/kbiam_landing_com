@@ -41,6 +41,32 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+
+    const closeMenu = () => {
+        mobileMenu.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+    };
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
+    });
+
+    // بستن منو با کلیک روی بک‌گراند
+    mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+            mobileMenu.classList.add("hidden");
+            document.body.classList.remove("overflow-hidden");
+        }
+    });
+    mobileLinks.forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
 });
 
 

@@ -27,7 +27,7 @@
 
 
             <div class="flex items-center gap-3">
-                <button class="md:hidden">
+                <button id="menuBtn" class="md:hidden">
                     <i data-feather="menu"></i>
                 </button>
             <div>
@@ -49,6 +49,39 @@
             </div>
         </div>
     </nav>
+    <div
+            id="mobileMenu"
+            class="fixed inset-0 z-40 bg-black/40  hidden md:hidden"
+    >
+        <div
+                class="absolute top-24 left-4 right-4 rounded-xl
+           bg-white/10 backdrop-blur-md border border-white/20
+           p-6 space-y-4 text-sm"
+        >
+            <a href="#hero" class="block hover:text-secondary mobile-link">خانه</a>
+            <a href="#whyUS" class="block hover:text-secondary mobile-link">چرا ما</a>
+            <a href="#services" class="block hover:text-secondary mobile-link">خدمات</a>
+            <a href="#how-it-works" class="block hover:text-secondary mobile-link">درباره ما</a>
+
+            <hr class="border-white/20">
+<div class="flex-1 flex items-center gap-3">
+    <a
+            href="#form"
+            class="block text-secondary text-center mobile-link"
+    >
+        ثبت نام آرایشگران
+    </a>
+
+    <button
+            class="flex-1 rounded-xl border px-4 py-2
+             hover:bg-white hover:text-black transition"
+    >
+        ورود / ثبت‌نام
+    </button>
+</div>
+
+        </div>
+    </div>
 </header>
 
 <main>
@@ -487,6 +520,8 @@
 
 <script type="module"
         src="/src/main.js"></script>
+
+
 
 </body>
 
