@@ -1,7 +1,7 @@
-import './style.css'
-import { setupAOS } from './src/aos.js'
-import {setupSwiper} from "./src/swipper.js";
-import { initRegisterForm } from "./src/formValidator.js";
+import '../style.css'
+import { setupAOS } from './aos.js'
+import {setupSwiper} from "./swipper.js";
+import { initRegisterForm } from "./formValidator.js";
 
 
 import feather from "feather-icons";
